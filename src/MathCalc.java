@@ -1,4 +1,4 @@
-public class Main {
+public class MathCalc {
     public static void main(String[] args) {
     double sunDiameter = 865000;
     double earthDiameter = 7600;
