@@ -8,7 +8,26 @@ public class StringCharacters {
         int spaces = 0,
                 vowels = 0,
                 letters = 0;
-//YOUR CODE HERE
+
+        for(char c : text.toLowerCase().toCharArray())
+        {
+            if(c == ' ')
+            {
+                spaces++;
+            }else
+            {
+                if(Character.isLetter(c))
+                {
+                    letters++;
+                }
+
+                if (c == 'o' || c == 'e' || c == 'u' || c == 'a' || c == 'i')
+                {
+                    vowels++;
+                }
+            }
+
+        }
         System.out.println("The text contained vowels: " + vowels + "\n"
                 + "consonants: " + (letters - vowels) + "\n" + "spaces: " + spaces);
     }
