@@ -7,8 +7,9 @@ public class Words {
                 + " the slings and arrows of outrageous fortune,"
                 + " or to take arms against a sea of troubles,"
                 + " and by opposing end them?";
+// To solve this task at first  I converted  all of the  letters to lower case in order to check every letters
 
-        String words[] = text.toLowerCase().split(" ");
+        String[] words = text.toLowerCase().split(" ");
         for (int i = 0; i < words.length; i++)
         {
             words[i] = words[i].replace(",", "")
@@ -27,7 +28,7 @@ public class Words {
 
         for (int i = 0; i < n - 1; i++) {
             swapped = false;
-
+//here is bubble sort method
             for (int j = 0; j < n - i - 1; j++) {
                 if (words[j].compareTo(words[j + 1]) > 0) {
                     String temp = words[j];
